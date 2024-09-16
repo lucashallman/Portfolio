@@ -62,7 +62,7 @@
   nav a {
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--secondary);
+    color: var(--dark);
     margin-right: 10px;
     background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@
   
   .hero-banner {
     background: rgb(68, 88, 120);
-    background-image: url(./images/placeholdjak.webp), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-image: url(https://picsum.photos/id/56/200/300), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -135,6 +135,7 @@
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
+    padding-left: 10px;
     border-right: 4px solid var(--primary);
     font-size: 4vw;
     line-height: 1.1;
@@ -146,6 +147,16 @@
   
   .page-section p {
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .placeholdermemo {
+    background-color: var(--secondary);
+    border: 3px;
+    border-style: solid;
+    border-color: var(--tertiary);
+    border-radius: 50px;
+    margin-top: 10px;
   }
   
   .flex-container {
@@ -222,33 +233,72 @@
   /* portfolio project images */
   /* TODO: Add portfolio project images here using background images*/
   .run-buddy {
-    background: url(./images/placeholdjak.webp);
+    background-image: url(https://picsum.photos/id/56/200/300);
     background-size: cover;
     background-color: var(--primary);
   }
   
   .led-wall {
-    background: url(./images/placeholdjak.webp);
+    background-image: url(https://picsum.photos/id/56/200/300);
     background-size: cover;
     background-color: var(--primary);
   }
   
   .react-calc {
-    background: url(./images/placeholdjak.webp);
+    background-image: url(https://picsum.photos/id/56/200/300);
     background-size: cover;
     background-color: var(--primary);
   }
   
   .pastel-puzzles {
-    background: url(./images/placeholdjak.webp);
+    background-image: url(https://picsum.photos/id/56/200/300);
     background-size: cover;
     background-color: var(--primary);
   }
   
   .surf-report {
-    background: url(./images/placeholdjak.webp);
+    background-image: url(https://picsum.photos/id/56/200/300);
     background-size: cover;
     background-color: var(--primary);
+  }
+
+  #Aboutme {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #Aboutme h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    border-bottom: solid 5px;
+  }
+
+  #Aboutme p {
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #Aboutsite {
+    border-bottom: solid 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #Aboutsite h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    border-bottom: solid 5px;
+  }
+
+  #Aboutsite p {
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   /* media queries */
@@ -289,3 +339,12 @@
   
   /* TODO: add media query for a max-width of 768px */
   
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      flex-basis: 100%;
+    }
+
+    .footer {
+      text-align: center;
+    }
+    }
